@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+
+<div class="container" style="background-color: white; padding: 50px; margin-top: 100px;">
+	<h1>Face Recognition Attendance System</h1>
+	<hr>
+	<div class="container">
+		<a class="btn btn-success" href="{% url 'add_emp' %}" style="font-size: 20px; margin-bottom: 10px;">Add New details</a>
+		<a class="btn btn-success"  href="{% url 'add_photos' %}" style="font-size: 20px; margin-bottom: 10px;">Add New photos</a>
+		<a class="btn btn-success"  href="{% url 'train_model' %}" style="font-size: 20px; margin-bottom: 10px;">Train model</a>
+		<a class="btn btn-success"  href="{% url 'identify' %}" style="font-size: 20px; margin-bottom: 10px;"> Mark Attendance</a>
+		<a class="btn btn-success"  href="{% url 'detected' %}" style="font-size: 20px; margin-bottom: 10px;">Detected people</a>
+	</div>
+</div>
+{% endblock %}
